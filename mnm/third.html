@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+           var uname= document.myform.txtuname.value;
+           var pass=document.myform.txtpass.value;
+           if(uname==null||uname==""){
+            alert("User name is mandatory");
+            return false;
+           }
+           if(pass.length<6){
+            alert("password should be 6 characters");
+            return false;
+           }
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" action="welcome.html"onsubmit="validateForm()">
+User name:<span style="color:red">*</span>
+<input type="text" name="txtuname" size="20" placeholder="Enter User Name"/><br/>
+Password: 
+<input type="password" name="txtpass"  placeholder="Enter Password"/><br/>
+
+<input type="submit" value="Register"/><br/>
+    </form>
+</body>
+</html>
