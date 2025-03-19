@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var emp=new Object();
+        emp.empno=1234;
+        emp.empename="Mahesh"
+        document.write(emp.empno+"\t"+emp.empename+"<br/>")
+
+        var empl={
+            eno:11,
+            ename:"jerry",
+
+        };
+        document.write(empl.eno+"\t"+empl.ename+"<br/>");
+
+        var products=new Array("toys","vessels","tables");
+        document.write(products[0]+"\t"+products[1]+"\t"+products[2]+"<br/>");
+
+        var eno=function(num){
+            if(num%2==0){
+                return "even no";
+            }
+            else{
+                return "odd no";
+            }
+        }
+        document.write(eno(52)+"<br/>");
+
+
+        function even(num){
+            if(num%2==0){
+                return "Even";
+            }
+            else{
+                return "odd";
+            }
+        }
+  document.write(even(53)+"<br/>");
+
+  var mydate=new Date();
+  document.write(mydate+"<br/>");
+  document.write(mydate.getDate()+"<br/>");
+  document.write(mydate.getDay()+"<br/>");
+  document.write(mydate.getMonth()+"<br/>");
+  document.write(mydate.getHours()+"<br/>");
+
+var i;
+for(i=0;i<5;i++){
+    document.write("i = "+i+"<br/>");
+}
+
+var obj={x:"1",y:200,z:300};
+for(let j in obj){
+    document.write("obj= "+obj[j]+"<br/>");
+}
+
+var k=0;
+while(k<5){
+    document.write(k+"<br/>");
+    k++;
+}
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
